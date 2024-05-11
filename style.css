@@ -1,0 +1,279 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .loader-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 10px;
+    animation: loader-dot 1.5s infinite ease-in-out;
+    animation-delay: calc(0.5s);
+  }
+  
+  .loader-dot:nth-child(2) {
+    animation-delay: calc(0.5s + 0.25s);
+  }
+  
+  .loader-dot:nth-child(3) {
+    animation-delay: calc(0.5s + 0.5s);
+  }
+  
+  @keyframes loader-dot {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+body{
+  background-color: #131314;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.descriptionDiv{
+  background-color: #1e1f20;
+  border-radius: 15px;
+  width: 80vw;
+  margin-top: 5vh;
+}
+
+.descriptionDiv h1{
+  text-align: center;
+  background: -webkit-linear-gradient(#5082ed, #d0677d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descriptionDiv p{
+  text-align: justify;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.controlsDiv{
+  margin-top: 5vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1f20;
+  border-radius: 15px;
+}
+
+.controlsDiv h1{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: -webkit-linear-gradient(#5082ed, #d0677d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.controlsDiv button{
+  width: 100%;
+  height: 5vh;
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  text-align: center;
+  background: -webkit-linear-gradient(#5082ed, #d0677d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.apiKeyInput{
+  width: 30%;
+  height: 4vh;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  background-color: #131314;
+  color: white;
+}
+
+.empresaDescription{
+  width: 50%;
+  height: 10vh;
+  border-radius: 10px;
+  border: none;
+  background-color: #131314;
+  color: white;
+}
+
+
+.controlsExpandDiv{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controlsExpandDiv p{
+  width: 50vw;
+  text-align: justify;
+}
+
+.controlsExpandDiv h2{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: -webkit-linear-gradient(#5082ed, #d0677d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emailBody{
+  width: 50%;
+  height: 10vh;
+  border-radius: 10px;
+  border: none;
+  background-color: #131314;
+  color: white;
+}
+
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  padding: 3px;
+  margin: 4vh;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+
+.outputDiv{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1f20;
+  border-radius: 15px;
+}
+
+.outputDiv h1{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: -webkit-linear-gradient(#5082ed, #d0677d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.outputDiv button{
+  width: 100%;
+  height: 5vh;
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  text-align: center;
+  background: -webkit-linear-gradient(#5082ed, #d0677d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.outputTexto{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+
+.margin{
+  height: 10vh;
+}
+
+code{
+  background-color: #131314;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0.50px solid white;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #131314 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.outputExpandDiv{
+  width: 90%;
+}
+
+
+.outputExpandDiv h1{
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.outputExpandDiv a{
+  background: -webkit-linear-gradient(#5082ed, #d0677d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+

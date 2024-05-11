@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email data analyzer</title>
+    <link rel="shortcut icon" href="./assets/mail_24dp_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="descriptionDiv">
+        <h1>Email data analyzer</h1>
+        
+        <p>Esta ferramenta utiliza o avançado modelo LLM Gemini 1.5 Pro e foi meticulosamente treinada para interpretar o contexto de e-mails, identificando com precisão spans, phishing ou qualquer tentativa de injeção de código malicioso.</p>
+        
+        <p>Sua aplicabilidade abrange uma ampla gama de usos, desde análises textuais para fins institucionais até integração com o backend da sua empresa, entregando resultados de forma eficiente e estruturada, utilizando o formato JSON.</p>
+    
+    </div>
+
+    <div class="controlsDiv">
+        <h1>Input</h1>
+        <button class="controlsExpandButton" onclick="inputExpand()">ˇ</button>
+        
+
+        <div class="controlsExpandDiv" id="controlsExpandDiv">       
+            <h2>Sua API-key Gemini</h2>
+            <input class="apiKeyInput" id="apiKeyInput" placeholder="Cole aqui sua API-key do Gemini" type="text">
+        
+        
+            <h2>Descreva sua empresa</h2>
+            <p>Para uma análise mais aprofundada, solicitamos gentilmente que forneça uma breve descrição da sua empresa, incluindo detalhes sobre o contexto de atuação, sua nacionalidade e missão institucional.</p>
+            <input class="empresaDescription" id="empresaDescription" placeholder="" type="text">
+           
+
+            <h2>Corpo do Email</h2>
+            <p>Inclua neste campo o conteúdo completo do e-mail que deseja analisar, idealmente contendo metadados relevantes, como o endereço IP e horário de envio do remetente.</p>
+            <input class="emailBody" id="emailBody" placeholder="" type="text">
+           
+           <h2>Tipo de output</h2>
+            <input class="jsonRadio" id="jsonRadio" type="radio" name="tipoOutput" id="json" value="json">
+            <label for="json">JSON</label><br>
+            <input  class="textoRadio" id="textoRadio" type="radio" name="tipoOutput" id="texto" value="texto">
+            <label for="texto">Texto descritivo</label><br>
+
+        </div>
+
+    </div>
+
+    <button class="button-64" role="button" onclick="collectDataAndGet();"><span class="text">Analisar</span></button>
+
+    <div class="outputDiv">
+        <h1>Output</h1>
+        <button class="outputExpandButton" id="outputExpandButton" onclick="outputExpand()">ˇ</button>
+        <div class="outputExpandDiv" id="outputExpandDiv" style="display: none;">
+            <div class="loader" id="loader" style="display: none;">
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+              </div>
+            <div class="outputTexto" id="outputTexto">
+            </div>
+        </div>
+
+    </div>
+    <div class="margin"></div>
+</body>
+</html>
