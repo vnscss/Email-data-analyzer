@@ -1,4 +1,5 @@
 # Email data analyzer
+Acesse a ferramenta através do link: [https://vnscss.github.io/Email-data-analyzer/](https://vnscss.github.io/Email-data-analyzer/)
 
 ## Descrição
 
@@ -23,10 +24,9 @@ Este projeto consiste em um website que analisa dados de emails utilizando o mod
 
 ## Como utilizar
 
-1. Acesse o website.
+1. Acesse o website através do link: [https://vnscss.github.io/Email-data-analyzer/](https://vnscss.github.io/Email-data-analyzer/)
 2. Insira a sua API-key do Gemini.
 3. Forneça uma breve descrição da sua empresa, incluindo contexto de atuação, nacionalidade e missão institucional.
 4. Cole o corpo do email que deseja analisar, incluindo metadados relevantes, como endereço IP e horário de envio do remetente.
 5. Selecione o tipo de saída desejado (JSON ou texto descritivo).
 6. Clique em "Analisar".
-
